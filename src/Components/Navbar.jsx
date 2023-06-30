@@ -25,7 +25,7 @@ const Navbar = () => {
   }, );
 
   useEffect(() => {
-    document.body.classList.toggle("THEME", state.theme);
+    document.body.classList.toggle("dark", state.theme);
   }, [state.theme]);
 
   return (

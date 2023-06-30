@@ -12,10 +12,7 @@ const Card = ({ name, username, id }) => {
 
 
 
-  useEffect(()=>{
-    
-  },[isFavorite])
- 
+   
   
   const addFav = () => {
     let foundObjet = (state.dentistasFav.find(obj => obj.id === id))
@@ -42,7 +39,7 @@ const Card = ({ name, username, id }) => {
       </Link>
 
       <Button variant="contained" type='submit' onClick={ addFav }>
-        {'Add Favs'}
+        {'Agregar a favoritos'}
       </Button>
 
 
